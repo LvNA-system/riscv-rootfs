@@ -55,7 +55,7 @@ DEPS = $(addprefix $(DST_DIR)/, $(addsuffix .d, $(basename $(SRCS))))
 .PHONY: install clean
 
 install: $(APP)
-	cp $(APP) $(ROOTFS_HOME)/rootfsimg/build/$(NAME)
+	@cp $(APP) $(ROOTFS_HOME)/rootfsimg/build/$(NAME)
 
 clean: 
 	rm -rf $(APP_DIR)/build/
