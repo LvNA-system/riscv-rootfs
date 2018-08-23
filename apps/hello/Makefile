@@ -1,4 +1,4 @@
 NAME = hello
 SRCS = hello.c
 
-include ../../Makefile.app
+include $(RISCV_ROOTFS_HOME)/Makefile.compile
