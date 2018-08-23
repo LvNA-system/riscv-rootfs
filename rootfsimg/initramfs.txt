@@ -26,4 +26,3 @@ file /lib/libm.so.6 ${RISCV}/sysroot/lib/libm.so.6 755 0 0
 file /bin/busybox ${RISCV_ROOTFS_HOME}/rootfsimg/build/busybox 755 0 0
 file /etc/inittab ${RISCV_ROOTFS_HOME}/rootfsimg/inittab 755 0 0
 slink /init /bin/busybox 755 0 0
-file /bin/poweroff ${RISCV_ROOTFS_HOME}/rootfsimg/build/poweroff 755 0 0
