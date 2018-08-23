@@ -1,6 +1,6 @@
 $(shell mkdir -p rootfsimg/build)
 
-APPS = hello mininit poweroff busybox
+APPS = hello busybox
 APPS_DIR = $(addprefix apps/, $(APPS))
 
 .PHONY: rootfsimg $(APPS_DIR) clean

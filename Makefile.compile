@@ -2,7 +2,7 @@ include $(RISCV_ROOTFS_HOME)/Makefile.app
 
 # Compilation flags
 
-CROSS_COMPILE = riscv64-unknown-linux-gnu-
+CROSS_COMPILE ?= riscv64-unknown-linux-gnu-
 
 AS = $(CROSS_COMPILE)gcc
 CC = $(CROSS_COMPILE)gcc
