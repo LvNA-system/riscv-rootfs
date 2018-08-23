@@ -1,4 +1,4 @@
 NAME = poweroff
 SRCS = poweroff.c
 
-include ../../Makefile.app
+include $(RISCV_ROOTFS_HOME)/Makefile.compile
