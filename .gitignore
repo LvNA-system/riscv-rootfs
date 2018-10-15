@@ -6,4 +6,6 @@
 !*.c
 !*.cpp
 !config
+!*.sh
+!*.patch
 repo/
