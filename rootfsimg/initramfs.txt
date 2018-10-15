@@ -29,6 +29,19 @@ file /bin/busybox ${RISCV_ROOTFS_HOME}/rootfsimg/build/busybox 755 0 0
 file /etc/inittab ${RISCV_ROOTFS_HOME}/rootfsimg/inittab 755 0 0
 slink /init /bin/busybox 755 0 0
 
+# scripts
+dir /root/scripts 755 0 0
+dir /root/scripts/1 755 0 0
+dir /root/scripts/2 755 0 0
+dir /root/scripts/5 755 0 0
+file /root/scripts/setup-eth.sh ${RISCV_ROOTFS_HOME}/rootfsimg/scripts/setup-eth.sh 755 0 0
+file /root/scripts/nfs.sh ${RISCV_ROOTFS_HOME}/rootfsimg/scripts/nfs.sh 755 0 0
+file /root/scripts/1/load_dsid.sh ${RISCV_ROOTFS_HOME}/rootfsimg/scripts/1/load-cgroup.sh 755 0 0
+file /root/scripts/1/copy-file.sh ${RISCV_ROOTFS_HOME}/rootfsimg/scripts/1/copy-file.sh 755 0 0
+file /root/scripts/2/83-mount.sh ${RISCV_ROOTFS_HOME}/rootfsimg/scripts/2/83-mount.sh 755 0 0
+file /root/scripts/2/85-mount.sh ${RISCV_ROOTFS_HOME}/rootfsimg/scripts/2/85-mount.sh 755 0 0
+file /root/scripts/5/run.sh ${RISCV_ROOTFS_HOME}/rootfsimg/scripts/5/run.sh 755 0 0
+
 #redis
 dir /root/redis 755 0 0
 file /root/redis/redis-server ${RISCV_ROOTFS_HOME}/rootfsimg/build/redis-server 755 0 0
