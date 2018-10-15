@@ -22,7 +22,15 @@ file /lib/ld-linux-riscv64-lp64d.so.1 ${RISCV}/sysroot/lib/ld-linux-riscv64-lp64
 file /lib/libc.so.6 ${RISCV}/sysroot/lib/libc.so.6 755 0 0
 file /lib/libresolv.so.2 ${RISCV}/sysroot/lib/libresolv.so.2 755 0 0
 file /lib/libm.so.6 ${RISCV}/sysroot/lib/libm.so.6 755 0 0
+file /lib/libdl.so.2 ${RISCV}/sysroot/lib/libdl.so.2 755 0 0
+file /lib/libpthread.so.0 ${RISCV}/sysroot/lib/libpthread.so.0 755 0 0
 
 file /bin/busybox ${RISCV_ROOTFS_HOME}/rootfsimg/build/busybox 755 0 0
 file /etc/inittab ${RISCV_ROOTFS_HOME}/rootfsimg/inittab 755 0 0
 slink /init /bin/busybox 755 0 0
+
+#redis
+dir /root/redis 755 0 0
+file /root/redis/redis-server ${RISCV_ROOTFS_HOME}/rootfsimg/build/redis-server 755 0 0
+file /root/redis/redis.conf ${RISCV_ROOTFS_HOME}/apps/redis/repo/redis.conf 644 0 0
+file /root/redis/run-redis.sh ${RISCV_ROOTFS_HOME}/apps/redis/scripts/run-redis.sh 644 0 0

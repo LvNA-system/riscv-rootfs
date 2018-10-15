@@ -1,6 +1,6 @@
 $(shell mkdir -p rootfsimg/build)
 
-APPS = hello busybox
+APPS = hello busybox redis
 APPS_DIR = $(addprefix apps/, $(APPS))
 
 .PHONY: rootfsimg $(APPS_DIR) clean
