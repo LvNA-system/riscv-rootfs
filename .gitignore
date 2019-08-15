@@ -11,3 +11,4 @@
 !*.txt
 !*.md
 repo/
+build/
