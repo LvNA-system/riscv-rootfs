@@ -27,7 +27,7 @@ file /lib/libdl.so.2 ${RISCV}/sysroot/lib/libdl.so.2 755 0 0
 file /lib/libpthread.so.0 ${RISCV}/sysroot/lib/libpthread.so.0 755 0 0
 
 file /bin/busybox ${RISCV_ROOTFS_HOME}/rootfsimg/build/busybox 755 0 0
-file /etc/inittab ${RISCV_ROOTFS_HOME}/rootfsimg/inittab 755 0 0
+file /etc/inittab ${RISCV_ROOTFS_HOME}/rootfsimg/inittab-autorun 755 0 0
 slink /init /bin/busybox 755 0 0
 
 dir /root/benchmark 755 0 0
